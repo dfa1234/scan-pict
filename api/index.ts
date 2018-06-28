@@ -42,6 +42,7 @@ app.get('/', (req, res, next) => res.send('👍'));
 
 app.post('/upload', postPicture);
 app.use('/images', express.static('images'));
+app.use('/release', express.static('release'));
 
 app.get('*', (req, res, next) => res.send('👎'));
 
