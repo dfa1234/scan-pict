@@ -5,6 +5,7 @@ For starting the api with PM2
     sudo yarn global add pm2
     sudo pm2 install typescript
     cd api
+    mkdir images
     cp config.ts.sample config.ts
     # then configure config.ts file accordingly 
     pm2 start index.ts

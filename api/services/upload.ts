@@ -28,7 +28,7 @@ export const postPicture = function (req: Request, res: Response, next: NextFunc
       if(error){
           res.json({success:false,error})
       } else{
-          const bitmap = require('fs').readFileSync("./images/response.jpg");
+          const bitmap = require('fs').readFileSync("./responses/response.jpg");
           const data = new Buffer(bitmap).toString('base64');
           return res.json({success:true, data, type:'jpg'})
       }
