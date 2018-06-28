@@ -5,7 +5,7 @@ import {Observable} from "rxjs/Observable";
 @Injectable()
 export class ApiProvider {
 
-  BASE_URL = 'http://10.0.0.151:3113';
+  BASE_URL = 'http://ec2-18-188-15-69.us-east-2.compute.amazonaws.com:3113';
 
   constructor(public http: HttpClient) {}
 
