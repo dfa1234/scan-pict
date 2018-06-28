@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Photo Scan
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <div class="action-buttons">
+    <button ion-button color="primary" (click)="takePicture()" *ngIf="!pictureData">Take a picture</button>
+    <button ion-button color="light" (click)="deletePicture()" *ngIf="pictureData">Delete picture</button>
+    <button ion-button color="danger" (click)="uploadPicture()" *ngIf="pictureData">Upload picture</button>
+  </div>
+
+  <br>
+  <img [src]="pictureData | safe" *ngIf="pictureData">
+
+</ion-content>

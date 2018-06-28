@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Result</ion-title>
+    <button (click)="dismiss()" class="close-btn">Close</button>
+  </ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <span>The server respond:</span>
+  <br>
+  <img [src]="pictureData | safe" *ngIf="pictureData">
+</ion-content>
