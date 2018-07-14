@@ -66,6 +66,7 @@ export class HomePage {
   uploadPicture(){
     this.api.uploadPicture$(this.data,this.type).subscribe(
       res => {
+        
         if(!res.success){
           this.alert.create({
             title:'Success',

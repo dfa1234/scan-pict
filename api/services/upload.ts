@@ -24,7 +24,7 @@ export const postPicture = function (req: Request, res: Response, next: NextFunc
     }
 
     require("fs")
-        .writeFile("./images/" + newGUID() + "." + type, base64Data, 'base64', error =>{
+        .writeFile("./images/" + newGUID()+ "-" + name + "." + type, base64Data, 'base64', error =>{
       if(error){
           res.json({success:false,error})
       } else{
